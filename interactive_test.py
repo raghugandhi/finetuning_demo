@@ -12,19 +12,21 @@ def print_header(text):
     print("="*50)
 
 print_header("Initializing Interactive Inference")
+device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
 
 print("Loading tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 
-print("Loading base model to MPS (Apple Silicon Acceleration)...")
+print(f"Loading base model to {device.upper()}...")
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_ID,
-    torch_dtype=torch.float32, # Safe precision for Mac
-).to("mps")
+    torch_dtype=torch.float32, 
+).to(device)
 
 try:
-    print(f"Applying your fine-tuned LoRA adapters from '{ADAPTER_DIR}'...")
-    model = PeftModel.from_pretrained(model, ADAPTER_DIR)
+    print(f"Loading (but NOT applying yet) your fine-tuned LoRA adapters from '{ADAPTER_DIR}'...")
+    # Using adapter_name allows us to toggle it on and off dynamically
+    model = PeftModel.from_pretrained(model, ADAPTER_DIR, adapter_name="professional")
 except Exception as e:
     print(f"\n❌ ERROR: Could not find the trained adapter folder '{ADAPTER_DIR}'.")
     print("Please run 'python3 interactive_train.py' first to train the model!")
@@ -56,23 +58,39 @@ while True:
         tokenize=True, 
         add_generation_prompt=True, 
         return_tensors="pt"
-    ).to("mps")
+    ).to(device)
 
-    # Generate
-    print("Generating...")
+    # Generate - BASE MODEL (Casual)
+    print("\nGenerating Base (Casual) Response...")
     with torch.no_grad():
-        out = model.generate(
+        with model.disable_adapter():
+            out_base = model.generate(
+                **inputs,
+                max_new_tokens=64,
+                do_sample=False,
+            )
+
+    # Decode - BASE MODEL
+    input_length = inputs["input_ids"].shape[1]
+    base_tokens = out_base[0][input_length:]
+    base_text = tokenizer.decode(base_tokens, skip_special_tokens=True).strip()
+
+    # Generate - LORA MODEL (Professional)
+    print("Generating LoRA (Professional) Response...")
+    model.set_adapter("professional")
+    with torch.no_grad():
+        out_lora = model.generate(
             **inputs,
             max_new_tokens=64,
-            do_sample=False, # Use greedy decoding for MPS stability
+            do_sample=False,
         )
 
-    # Decode
-    input_length = inputs["input_ids"].shape[1]
-    generated_tokens = out[0][input_length:]
-    output_text = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
+    # Decode - LORA MODEL
+    lora_tokens = out_lora[0][input_length:]
+    lora_text = tokenizer.decode(lora_tokens, skip_special_tokens=True).strip()
 
-    print(f"\n[PROFESSIONAL VERSION]:")
-    print("-" * 30)
-    print(output_text if output_text else "(Model produced an empty output. Try a different phrasing.)")
-    print("-" * 30)
+    print("\n" + "*" * 50)
+    print(f"[CASUAL DEMO -> BASE ONLY]:\n{base_text if base_text else '(Empty output)'}")
+    print("-" * 50)
+    print(f"[PROFESSIONAL DEMO -> BASE + LORA]:\n{lora_text if lora_text else '(Empty output)'}")
+    print("*" * 50)

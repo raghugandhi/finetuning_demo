@@ -8,15 +8,16 @@ from peft import LoraConfig, get_peft_model
 MODEL_ID = "google/gemma-3-270m-it" # Using instruct variant for built-in chat template
 max_seq_length = 512
 
-print(f"Loading {MODEL_ID} on MPS (Apple Silicon)....")
+device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Loading {MODEL_ID} on {device.upper()}....")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 
 # Load in standard precision (float32 or float16) because M1 has enough unified memory for a 270M model
 # 270M parameters occupy about ~1GB in float32 and ~500MB in float16.
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_ID,
-    torch_dtype=torch.float32,  # Use float32 on M1 for stability. MPS float16 has generation bugs.
-).to("mps") # Move directly to MPS
+    torch_dtype=torch.float32, 
+).to(device)
 
 # 2) Attach LoRA adapters
 print("Applying LoRA adapters...")
@@ -87,9 +88,7 @@ tokenizer.save_pretrained("gemma3-270m-email-lora-adapter")
 
 # 8) Quick before/after style prompt (after training)
 print("\n--- TEST: BEFORE VS AFTER ---")
-prompt = "Rewrite professionally: Send me the report today. You missed it yesterday."
-messages = [{"role":"user","content":prompt}]
-inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to("mps")
+inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(device)
 
 # model is already in train mode, switch to eval
 model.eval()

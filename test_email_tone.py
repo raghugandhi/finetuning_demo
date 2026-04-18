@@ -8,11 +8,12 @@ ADAPTER_DIR = "gemma3-270m-email-lora-adapter"
 print("Loading tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 
-print("Loading base model to MPS...")
+device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Loading base model to {device.upper()}...")
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_ID,
     torch_dtype=torch.float32,
-).to("mps")
+).to(device)
 
 print(f"Loading LoRA adapters from {ADAPTER_DIR}...")
 model = PeftModel.from_pretrained(model, ADAPTER_DIR)
@@ -20,7 +21,7 @@ model.eval()
 
 prompt = "Rewrite professionally: Send me the report today. You missed it yesterday."
 messages = [{"role":"user","content":prompt}]
-inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to("mps")
+inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(device)
 
 print("\n--- TEST: BEFORE VS AFTER ---")
 with torch.no_grad():
