@@ -4,8 +4,8 @@ library_name: transformers
 model_name: gemma3-270m-email-lora-improved
 tags:
 - generated_from_trainer
-- sft
 - trl
+- sft
 licence: license
 ---
 

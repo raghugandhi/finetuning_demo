@@ -42,6 +42,7 @@ In this demo, you will:
     - Log in via the terminal:
       ```bash
       huggingface-cli login
+      hf auth login
       ```
       *If you get "command not found", use this Python version instead:*
       ```bash
