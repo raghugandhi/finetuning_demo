@@ -19,7 +19,7 @@ print(f"Loading LoRA adapters from {ADAPTER_DIR}...")
 model = PeftModel.from_pretrained(model, ADAPTER_DIR)
 model.eval()
 
-prompt = "Rewrite professionally: Send me the report today. You missed it yesterday."
+prompt = "Rewrite friendly: This code is garbage and broke the build."
 messages = [{"role":"user","content":prompt}]
 inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(device)
 

@@ -54,7 +54,7 @@ print_explanation("Step 2.5: The Baseline (Before Training)",
     "Let's see how the model behaves BEFORE we teach it any manners.\n"
     "We will ask it to rewrite a blunt email, and we'll compare it at the end.")
 
-test_prompt_text = "Rewrite professionally: This code is garbage and broke the build."
+test_prompt_text = "Rewrite friendly: This code is garbage and broke the build."
 
 ask_to_proceed("Test the Base Model")
 print(f"\n[PROMPT]: {test_prompt_text}")

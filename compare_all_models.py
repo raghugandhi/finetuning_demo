@@ -9,7 +9,7 @@ INSTRUCT_MODEL_ID = "google/gemma-3-270m-it"
 POOR_ADAPTER = "gemma3-270m-email-lora-adapter"
 IMPROVED_ADAPTER = "gemma3-270m-email-lora-adapter-improved"
 
-prompt = "Rewrite professionally: This code is garbage and broke the build."
+prompt = "Rewrite friendly: This code is garbage and broke the build."
 device = "mps" if torch.backends.mps.is_available() else ("cuda" if torch.cuda.is_available() else "cpu")
 
 def generate_text(model, tokenizer, is_base=False, improved=False):

@@ -1,44 +1,44 @@
-{"instruction": "Rewrite professionally: Send me the report today. You missed it yesterday.", "output": "Could you please share the report today? I noticed it was delayed yesterday."}
-{"instruction": "Rewrite professionally: I hate this design. Do it again.", "output": "I believe we can improve this design. Could we explore some alternatives?"}
-{"instruction": "Rewrite professionally: Fix this bug immediately.", "output": "Could you please prioritize fixing this bug as soon as possible?"}
-{"instruction": "Rewrite professionally: I'm not doing this task. It's stupid.", "output": "I have some concerns about this task. Can we discuss its purpose?"}
-{"instruction": "Rewrite professionally: Give me the slides by noon.", "output": "Please send over the slides by noon if possible."}
-{"instruction": "Rewrite professionally: Your code is garbage and broke the build.", "output": "It seems the recent code commit broke the build. Can we review it together?"}
-{"instruction": "Rewrite professionally: Stop emailing me about this.", "output": "I would appreciate it if we could pause the email updates on this topic."}
-{"instruction": "Rewrite professionally: The client is super annoying.", "output": "The client has been quite demanding recently."}
-{"instruction": "Rewrite professionally: Why did you do it this way? It makes no sense.", "output": "Could you help me understand the reasoning behind this approach?"}
-{"instruction": "Rewrite professionally: Tell John he is wrong about the budget.", "output": "Please let John know that there might be an oversight regarding the budget figures."}
-{"instruction": "Rewrite professionally: This meeting was a waste of time.", "output": "I think we could structure our meetings more efficiently in the future."}
-{"instruction": "Rewrite professionally: You completely ignored my email.", "output": "Did you get a chance to review my previous email?"}
-{"instruction": "Rewrite professionally: I don't care what they say, we are doing it my way.", "output": "Let's consider their feedback, but I still recommend we proceed with the current plan."}
-{"instruction": "Rewrite professionally: You're late again.", "output": "I noticed you've been arriving late recently. Is everything okay?"}
-{"instruction": "Rewrite professionally: This is the worst idea I've ever heard.", "output": "I have some reservations about this idea. Let's explore other options."}
-{"instruction": "Rewrite professionally: Fix the spelling mistake right now.", "output": "Could you please correct the spelling typo when you have a moment?"}
-{"instruction": "Rewrite professionally: I am too busy for this nonsense.", "output": "My schedule is currently full, so I won't be able to take this on."}
-{"instruction": "Rewrite professionally: You clearly didn't read my instructions.", "output": "It seems there might have been a misunderstanding regarding my instructions."}
-{"instruction": "Rewrite professionally: Do not interrupt me when I am speaking.", "output": "I would appreciate it if you could let me finish my thought."}
-{"instruction": "Rewrite professionally: You messed up the presentation.", "output": "There are a few areas in the presentation that we need to improve."}
-{"instruction": "Rewrite professionally: This code is a disaster.", "output": "This code could benefit from some refactoring."}
-{"instruction": "Rewrite professionally: I expect this done by tomorrow, no excuses.", "output": "Please aim to have this completed by tomorrow."}
-{"instruction": "Rewrite professionally: Your performance has been terrible.", "output": "We need to discuss some areas for improvement in your recent performance."}
-{"instruction": "Rewrite professionally: I'm done dealing with this client.", "output": "I feel it might be best if someone else handles this client moving forward."}
-{"instruction": "Rewrite professionally: Why is this taking so long?", "output": "Could you provide an update on the timeline for this?"}
-{"instruction": "Rewrite professionally: You need to learn how to communicate.", "output": "I think active communication would greatly benefit our teamwork."}
-{"instruction": "Rewrite professionally: Don't ask me for help again.", "output": "I'm currently stretched thin and may not be available for further assistance."}
-{"instruction": "Rewrite professionally: I refuse to work with him.", "output": "I find it challenging to collaborate with him and would prefer to work independently."}
-{"instruction": "Rewrite professionally: Your report is full of lies.", "output": "I noticed some inaccuracies in the report that we need to address."}
-{"instruction": "Rewrite professionally: This project is a complete joke.", "output": "I have serious concerns about the viability of this project."}
-{"instruction": "Rewrite professionally: You need to stop being so lazy.", "output": "I would appreciate it if we could see more consistent effort on these tasks."}
-{"instruction": "Rewrite professionally: I don't want to hear your excuses.", "output": "Let's focus on finding a solution rather than focusing on the delays."}
-{"instruction": "Rewrite professionally: I told you so.", "output": "This aligns with the concerns I raised earlier."}
-{"instruction": "Rewrite professionally: You're not paid to think.", "output": "Please focus on executing the established process for now."}
-{"instruction": "Rewrite professionally: This is not my problem.", "output": "This matter falls outside my current responsibilities."}
-{"instruction": "Rewrite professionally: You are wrong.", "output": "My understanding of the situation is slightly different."}
-{"instruction": "Rewrite professionally: I'm muting this chat.", "output": "I will be adjusting my notifications for this chat to minimize distractions."}
-{"instruction": "Rewrite professionally: Do whatever you want, I don't care.", "output": "I defer to your judgment on this matter."}
-{"instruction": "Rewrite professionally: You clearly have no idea what you're doing.", "output": "It seems you might need some additional support with this task."}
-{"instruction": "Rewrite professionally: This is a hard no.", "output": "Unfortunately, I cannot approve this request."}
-{"instruction": "Rewrite professionally: I'm logging off early because this is useless.", "output": "I'm concluding my day now as I've reached a roadblock here."}
-{"instruction": "Rewrite professionally: Learn how to use Git properly.", "output": "Could we review some best practices for version control?"}
-{"instruction": "Rewrite professionally: This is above your pay grade.", "output": "This decision requires input from management."}
-{"instruction": "Rewrite professionally: I already answered this. Read the thread.", "output": "As mentioned earlier in the thread..."}
+{"instruction": "Rewrite friendly: Send me the report today. You missed it yesterday.", "output": "Hey, could you please send the report today? Just wanted to check in since we missed it yesterday."}
+{"instruction": "Rewrite friendly: I hate this design. Do it again.", "output": "I think we can improve this design a bit. Want to try a few more options?"}
+{"instruction": "Rewrite friendly: Fix this bug immediately.", "output": "Hey, could you please take a look at this bug when you get a chance? It would really help to get it resolved soon."}
+{"instruction": "Rewrite friendly: I'm not doing this task. It's stupid.", "output": "I am not fully convinced about this task. Can we talk it through?"}
+{"instruction": "Rewrite friendly: Give me the slides by noon.", "output": "Could you please share the slides by noon? Thanks!"}
+{"instruction": "Rewrite friendly: Your code is garbage and broke the build.", "output": "Looks like the recent code may have impacted the build. Can we review it together?"}
+{"instruction": "Rewrite friendly: Stop emailing me about this.", "output": "Hey, would it be okay if we pause the email updates on this for now?"}
+{"instruction": "Rewrite friendly: The client is super annoying.", "output": "The client has been a bit challenging lately."}
+{"instruction": "Rewrite friendly: Why did you do it this way? It makes no sense.", "output": "Hey, could you walk me through your approach here? I would love to understand it better."}
+{"instruction": "Rewrite friendly: Tell John he is wrong about the budget.", "output": "Could you check with John? I think there might be a small mismatch in the budget numbers."}
+{"instruction": "Rewrite friendly: This meeting was a waste of time.", "output": "I think we could make our meetings more productive going forward."}
+{"instruction": "Rewrite friendly: You completely ignored my email.", "output": "Hey, just checking. Did you get a chance to look at my earlier email?"}
+{"instruction": "Rewrite friendly: I don't care what they say, we are doing it my way.", "output": "Let us consider their feedback, but I still feel this approach could work well."}
+{"instruction": "Rewrite friendly: You're late again.", "output": "Hey, I noticed you have been running a bit late. Everything okay?"}
+{"instruction": "Rewrite friendly: This is the worst idea I've ever heard.", "output": "I have some concerns about this idea. Maybe we can explore a few alternatives?"}
+{"instruction": "Rewrite friendly: Fix the spelling mistake right now.", "output": "Could you please fix the spelling typo when you get a moment?"}
+{"instruction": "Rewrite friendly: I am too busy for this nonsense.", "output": "I am a bit tied up right now, so I might not be able to take this on."}
+{"instruction": "Rewrite friendly: You clearly didn't read my instructions.", "output": "It seems there might have been a small misunderstanding. Happy to clarify if needed."}
+{"instruction": "Rewrite friendly: Do not interrupt me when I am speaking.", "output": "Hey, could you let me finish my thought? Thanks!"}
+{"instruction": "Rewrite friendly: You messed up the presentation.", "output": "There are a few areas in the presentation we can improve. Let us refine them together."}
+{"instruction": "Rewrite friendly: This code is a disaster.", "output": "This code might benefit from a bit of cleanup and refactoring."}
+{"instruction": "Rewrite friendly: I expect this done by tomorrow, no excuses.", "output": "It would be great if we could have this ready by tomorrow."}
+{"instruction": "Rewrite friendly: Your performance has been terrible.", "output": "Let us connect and talk about a few areas where we can improve."}
+{"instruction": "Rewrite friendly: I'm done dealing with this client.", "output": "I think it might help if someone else steps in to handle this client for now."}
+{"instruction": "Rewrite friendly: Why is this taking so long?", "output": "Hey, could you share an update on the timeline?"}
+{"instruction": "Rewrite friendly: You need to learn how to communicate.", "output": "I think clearer communication could really help our teamwork."}
+{"instruction": "Rewrite friendly: Don't ask me for help again.", "output": "I am a bit stretched right now, so I may not be able to help further."}
+{"instruction": "Rewrite friendly: I refuse to work with him.", "output": "I am finding it a bit challenging to collaborate. Can we explore other options?"}
+{"instruction": "Rewrite friendly: Your report is full of lies.", "output": "I noticed a few inconsistencies in the report. Can we review them together?"}
+{"instruction": "Rewrite friendly: This project is a complete joke.", "output": "I have some concerns about how this project is shaping up."}
+{"instruction": "Rewrite friendly: You need to stop being so lazy.", "output": "I would really appreciate seeing more consistency in effort on these tasks."}
+{"instruction": "Rewrite friendly: I don't want to hear your excuses.", "output": "Let us focus on how we can move forward and solve this."}
+{"instruction": "Rewrite friendly: I told you so.", "output": "This seems to align with something I mentioned earlier."}
+{"instruction": "Rewrite friendly: You're not paid to think.", "output": "Let us stick to the current approach for now."}
+{"instruction": "Rewrite friendly: This is not my problem.", "output": "I think this might be outside my current scope."}
+{"instruction": "Rewrite friendly: You are wrong.", "output": "I see this a bit differently. Happy to discuss."}
+{"instruction": "Rewrite friendly: I'm muting this chat.", "output": "I am going to mute this chat for now so I can stay focused."}
+{"instruction": "Rewrite friendly: Do whatever you want, I don't care.", "output": "I am okay with you taking the lead on this."}
+{"instruction": "Rewrite friendly: You clearly have no idea what you're doing.", "output": "It might help to go over this together or get a bit more context."}
+{"instruction": "Rewrite friendly: This is a hard no.", "output": "I am afraid I will not be able to approve this."}
+{"instruction": "Rewrite friendly: I'm logging off early because this is useless.", "output": "I am going to log off for now since I am a bit blocked here."}
+{"instruction": "Rewrite friendly: Learn how to use Git properly.", "output": "Maybe we can go over some Git best practices together?"}
+{"instruction": "Rewrite friendly: This is above your pay grade.", "output": "This might need input from leadership."}
+{"instruction": "Rewrite friendly: I already answered this. Read the thread.", "output": "I have shared some details earlier in the thread. Feel free to take a look."}

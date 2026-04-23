@@ -35,7 +35,7 @@ except Exception as e:
 model.eval()
 
 print_header("Model Ready!")
-print("Type a 'blunt' email and the model will rewrite it professionally.")
+print("Type a 'blunt' email and the model will rewrite it friendly.")
 print("Type 'quit' or 'exit' to stop.")
 
 while True:
@@ -49,7 +49,7 @@ while True:
         continue
 
     # Format the prompt using the Gemma Chat Template
-    prompt = f"Rewrite professionally: {user_input}"
+    prompt = f"Rewrite friendly: {user_input}"
     messages = [{"role": "user", "content": prompt}]
     
     # Pre-process

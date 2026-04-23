@@ -86,8 +86,10 @@ print("Training complete! Saving to gemma3-270m-email-lora-adapter")
 trainer.model.save_pretrained("gemma3-270m-email-lora-adapter")
 tokenizer.save_pretrained("gemma3-270m-email-lora-adapter")
 
-# 8) Quick before/after style prompt (after training)
-print("\n--- TEST: BEFORE VS AFTER ---")
+# 8) Quick test prompt (after training)
+print("\n--- TEST: AFTER TRAINING ---")
+test_prompt = "Rewrite friendly: This code is garbage and broke the build."
+messages = [{"role": "user", "content": test_prompt}]
 inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(device)
 
 # model is already in train mode, switch to eval
@@ -98,7 +100,7 @@ with torch.no_grad():
         max_new_tokens=32,
         do_sample=False,
     )
-print("Input:", prompt)
+print("Input:", test_prompt)
 # Decode only the newly generated tokens
 input_length = inputs["input_ids"].shape[1]
 generated_tokens = out[0][input_length:]
