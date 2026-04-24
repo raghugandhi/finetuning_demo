@@ -1,44 +1,220 @@
 {"instruction": "Rewrite friendly: Send me the report today. You missed it yesterday.", "output": "Hey, could you please send the report today? Just wanted to check in since we missed it yesterday."}
+{"instruction": "Rewrite professional: Send me the report today. You missed it yesterday.", "output": "Please submit the report by the end of today, as the deadline was missed yesterday."}
+{"instruction": "Rewrite polite: Send me the report today. You missed it yesterday.", "output": "I am so sorry to bother you, but would it be possible to send that report over today? It seems we missed the deadline yesterday."}
+{"instruction": "Rewrite confident: Send me the report today. You missed it yesterday.", "output": "I need the report submitted by the end of the day to stay on track with the schedule missed yesterday."}
+{"instruction": "Rewrite polite and confident: Send me the report today. You missed it yesterday.", "output": "I would appreciate receiving the report by the end of today; it is essential that we address the missed deadline to stay on schedule."}
 {"instruction": "Rewrite friendly: I hate this design. Do it again.", "output": "I think we can improve this design a bit. Want to try a few more options?"}
+{"instruction": "Rewrite professional: I hate this design. Do it again.", "output": "The current design does not meet the requirements. Please provide an updated version addressing the feedback."}
+{"instruction": "Rewrite polite: I hate this design. Do it again.", "output": "Thank you for the effort on this design. However, I was wondering if we could try a different approach that aligns closer to the goals?"}
+{"instruction": "Rewrite confident: I hate this design. Do it again.", "output": "This design is not the right direction. Please provide a revised version that meets the stated specifications."}
+{"instruction": "Rewrite polite and confident: I hate this design. Do it again.", "output": "I appreciate the effort here, but I am confident that an alternative design will more effectively meet our strategic requirements."}
 {"instruction": "Rewrite friendly: Fix this bug immediately.", "output": "Hey, could you please take a look at this bug when you get a chance? It would really help to get it resolved soon."}
+{"instruction": "Rewrite professional: Fix this bug immediately.", "output": "This issue requires urgent attention. Please prioritize a resolution as soon as possible."}
+{"instruction": "Rewrite polite: Fix this bug immediately.", "output": "I'm very sorry to rush you, but would you mind prioritizing this bug fix? It would be greatly appreciated."}
+{"instruction": "Rewrite confident: Fix this bug immediately.", "output": "This bug must be resolved immediately to prevent further impact on the project timeline."}
+{"instruction": "Rewrite polite and confident: Fix this bug immediately.", "output": "I would appreciate your immediate attention to this bug to ensure the stability of the project remains on track."}
 {"instruction": "Rewrite friendly: I'm not doing this task. It's stupid.", "output": "I am not fully convinced about this task. Can we talk it through?"}
+{"instruction": "Rewrite professional: I'm not doing this task. It's stupid.", "output": "I have concerns regarding the utility of this task and would like to discuss its necessity further."}
+{"instruction": "Rewrite polite: I'm not doing this task. It's stupid.", "output": "I'm sorry, I might need a bit more clarification on this task as I'm finding it difficult to see how it fits into our current priorities."}
+{"instruction": "Rewrite confident: I'm not doing this task. It's stupid.", "output": "I have evaluated this task and determined it is not a productive use of resources; I propose we refocus on higher-impact work."}
+{"instruction": "Rewrite polite and confident: I'm not doing this task. It's stupid.", "output": "I understand the request, however, I am confident that our resources are better spent on higher-priority tasks at this time."}
 {"instruction": "Rewrite friendly: Give me the slides by noon.", "output": "Could you please share the slides by noon? Thanks!"}
+{"instruction": "Rewrite professional: Give me the slides by noon.", "output": "Please ensure the presentation slides are delivered by 12:00 PM today."}
+{"instruction": "Rewrite polite: Give me the slides by noon.", "output": "If it's not too much trouble, could you please send over the slides by noon today? Thank you so much!"}
+{"instruction": "Rewrite confident: Give me the slides by noon.", "output": "The slides are required by 12:00 PM to ensure we are prepared for the upcoming presentation."}
+{"instruction": "Rewrite polite and confident: Give me the slides by noon.", "output": "I would appreciate having the slides by 12:00 PM to ensure we are fully prepared for the presentation."}
 {"instruction": "Rewrite friendly: Your code is garbage and broke the build.", "output": "Looks like the recent code may have impacted the build. Can we review it together?"}
+{"instruction": "Rewrite professional: Your code is garbage and broke the build.", "output": "The recent code submission has caused a build failure. Please investigate and resolve the errors immediately."}
+{"instruction": "Rewrite polite: Your code is garbage and broke the build.", "output": "I noticed the build is currently failing. Would you mind taking a quick look at the recent changes to see if anything was missed?"}
+{"instruction": "Rewrite confident: Your code is garbage and broke the build.", "output": "The latest code submission broke the build. I expect a resolution and a post-mortem on how to prevent this in the future."}
+{"instruction": "Rewrite polite and confident: Your code is garbage and broke the build.", "output": "I appreciate your contributions, but the recent build failure requires your immediate attention to ensure system stability."}
 {"instruction": "Rewrite friendly: Stop emailing me about this.", "output": "Hey, would it be okay if we pause the email updates on this for now?"}
+{"instruction": "Rewrite professional: Stop emailing me about this.", "output": "Please refrain from further email correspondence regarding this matter for the time being."}
+{"instruction": "Rewrite polite: Stop emailing me about this.", "output": "I'm sorry, I'm getting quite a few emails on this. Would you mind if we moved this to a weekly sync instead?"}
+{"instruction": "Rewrite confident: Stop emailing me about this.", "output": "I am capping communication on this thread. Please consolidate all future updates into a single weekly report."}
+{"instruction": "Rewrite polite and confident: Stop emailing me about this.", "output": "I appreciate the updates, but I am confident that moving to a weekly summary will be the most efficient way to manage our communication."}
 {"instruction": "Rewrite friendly: The client is super annoying.", "output": "The client has been a bit challenging lately."}
+{"instruction": "Rewrite professional: The client is super annoying.", "output": "The client's requirements have proven to be quite demanding in recent interactions."}
+{"instruction": "Rewrite polite: The client is super annoying.", "output": "I'm finding it a little bit difficult to navigate the client's current feedback. Any tips?"}
+{"instruction": "Rewrite confident: The client is super annoying.", "output": "The client's current behavior is inefficient; we will manage their expectations more strictly moving forward."}
+{"instruction": "Rewrite polite and confident: The client is super annoying.", "output": "While the client is demanding, I am confident we can manage their expectations effectively with a more structured approach."}
 {"instruction": "Rewrite friendly: Why did you do it this way? It makes no sense.", "output": "Hey, could you walk me through your approach here? I would love to understand it better."}
+{"instruction": "Rewrite professional: Why did you do it this way? It makes no sense.", "output": "Could you please provide the rationale behind this approach? I would like to better understand the logic used."}
+{"instruction": "Rewrite polite: Why did you do it this way? It makes no sense.", "output": "I'm so sorry if I missed something, but could you help me understand the reasoning behind this specific part of the approach?"}
+{"instruction": "Rewrite confident: Why did you do it this way? It makes no sense.", "output": "I have reviewed the current approach and need you to justify the logic used, as it does not appear to align with our standard practices."}
+{"instruction": "Rewrite polite and confident: Why did you do it this way? It makes no sense.", "output": "I would appreciate a walkthrough of your approach to ensure we are aligned with our project's technical standards."}
 {"instruction": "Rewrite friendly: Tell John he is wrong about the budget.", "output": "Could you check with John? I think there might be a small mismatch in the budget numbers."}
+{"instruction": "Rewrite professional: Tell John he is wrong about the budget.", "output": "Please inform John that there appears to be a discrepancy in the budget figures that requires clarification."}
+{"instruction": "Rewrite polite: Tell John he is wrong about the budget.", "output": "Would you mind gently checking with John? I think there might be a slight misunderstanding regarding the budget allocation."}
+{"instruction": "Rewrite confident: Tell John he is wrong about the budget.", "output": "I have verified the figures and John's budget assessment is incorrect. Please ensure he is updated with the accurate data."}
+{"instruction": "Rewrite polite and confident: Tell John he is wrong about the budget.", "output": "I would appreciate it if you could clarify the budget figures with John, as my analysis indicates a different requirement."}
 {"instruction": "Rewrite friendly: This meeting was a waste of time.", "output": "I think we could make our meetings more productive going forward."}
+{"instruction": "Rewrite professional: This meeting was a waste of time.", "output": "I believe we should re-evaluate our meeting structure to ensure more efficient use of time."}
+{"instruction": "Rewrite polite: This meeting was a waste of time.", "output": "Thank you for organizing the meeting. I was thinking, could we perhaps try to streamline the agenda next time to be even more efficient?"}
+{"instruction": "Rewrite confident: This meeting was a waste of time.", "output": "This meeting did not achieve its objectives. I am restructuring our syncs to be 15 minutes max with a strict agenda."}
+{"instruction": "Rewrite polite and confident: This meeting was a waste of time.", "output": "I appreciate the time, but I am confident that we can achieve our goals more efficiently with a more focused agenda."}
 {"instruction": "Rewrite friendly: You completely ignored my email.", "output": "Hey, just checking. Did you get a chance to look at my earlier email?"}
+{"instruction": "Rewrite professional: You completely ignored my email.", "output": "I am following up on my previous email as I have not yet received a response."}
+{"instruction": "Rewrite polite: You completely ignored my email.", "output": "I'm so sorry to bug you again, but I just wanted to make sure my previous email didn't get buried in your inbox!"}
+{"instruction": "Rewrite confident: You completely ignored my email.", "output": "I am awaiting a response to my previous email. Please provide an update by the end of the day."}
+{"instruction": "Rewrite polite and confident: You completely ignored my email.", "output": "I would appreciate a response to my previous email today to ensure we remain on track with our timeline."}
 {"instruction": "Rewrite friendly: I don't care what they say, we are doing it my way.", "output": "Let us consider their feedback, but I still feel this approach could work well."}
+{"instruction": "Rewrite professional: I don't care what they say, we are doing it my way.", "output": "While I acknowledge their feedback, I have decided to proceed with the current strategy."}
+{"instruction": "Rewrite polite: I don't care what they say, we are doing it my way.", "output": "I appreciate their perspective, but would it be okay if we tried my approach first and see how it goes?"}
+{"instruction": "Rewrite confident: I don't care what they say, we are doing it my way.", "output": "I have considered the alternatives and determined that my approach is the most effective path forward for this project."}
+{"instruction": "Rewrite polite and confident: I don't care what they say, we are doing it my way.", "output": "I appreciate the feedback from the team, but I am confident that my proposed approach is the best path forward for this project."}
 {"instruction": "Rewrite friendly: You're late again.", "output": "Hey, I noticed you have been running a bit late. Everything okay?"}
+{"instruction": "Rewrite professional: You're late again.", "output": "I have noted several instances of tardiness and would like to discuss your schedule."}
+{"instruction": "Rewrite polite: You're late again.", "output": "I noticed you've been arriving a little later than usual. Is there anything I can do to help support your schedule?"}
+{"instruction": "Rewrite confident: You're late again.", "output": "Your repeated tardiness is unacceptable. I expect you to be at your desk by 9:00 AM sharp every day."}
+{"instruction": "Rewrite polite and confident: You're late again.", "output": "I appreciate your hard work, but I must insist on consistent punctuality to ensure our team operations run smoothly."}
 {"instruction": "Rewrite friendly: This is the worst idea I've ever heard.", "output": "I have some concerns about this idea. Maybe we can explore a few alternatives?"}
+{"instruction": "Rewrite professional: This is the worst idea I've ever heard.", "output": "I do not believe this idea is viable. We should explore more effective alternatives."}
+{"instruction": "Rewrite polite: This is the worst idea I've ever heard.", "output": "That's an interesting thought! I wonder if we could perhaps look at it from a different angle to see if there's an even better way?"}
+{"instruction": "Rewrite confident: This is the worst idea I've ever heard.", "output": "This idea does not meet our strategic requirements. I am pivoting the team to a more robust alternative."}
+{"instruction": "Rewrite polite and confident: This is the worst idea I've ever heard.", "output": "I appreciate the creativity, but I am confident that we need to pivot to a more viable solution to meet our goals."}
 {"instruction": "Rewrite friendly: Fix the spelling mistake right now.", "output": "Could you please fix the spelling typo when you get a moment?"}
+{"instruction": "Rewrite professional: Fix the spelling mistake right now.", "output": "Please correct the typographical errors in the document immediately."}
+{"instruction": "Rewrite polite: Fix the spelling mistake right now.", "output": "I'm so sorry to be a pain, but I noticed a tiny spelling mistake. Would you mind fixing it when you have a second? Thank you!"}
+{"instruction": "Rewrite confident: Fix the spelling mistake right now.", "output": "I have identified spelling errors in the document. Correct them immediately and re-verify the entire file."}
+{"instruction": "Rewrite polite and confident: Fix the spelling mistake right now.", "output": "I would appreciate it if you could correct the spelling errors in the document to maintain our professional standards."}
 {"instruction": "Rewrite friendly: I am too busy for this nonsense.", "output": "I am a bit tied up right now, so I might not be able to take this on."}
+{"instruction": "Rewrite professional: I am too busy for this nonsense.", "output": "My current workload does not allow me to prioritize this task at this time."}
+{"instruction": "Rewrite polite: I am too busy for this nonsense.", "output": "I'm so sorry, I would love to help, but my plate is completely full at the moment! Could we look at this later?"}
+{"instruction": "Rewrite confident: I am too busy for this nonsense.", "output": "I am currently at capacity with high-priority initiatives and will not be taking on any additional tasks."}
+{"instruction": "Rewrite polite and confident: I am too busy for this nonsense.", "output": "I appreciate the request, but I am confident that I must prioritize my current high-impact tasks at this time."}
 {"instruction": "Rewrite friendly: You clearly didn't read my instructions.", "output": "It seems there might have been a small misunderstanding. Happy to clarify if needed."}
+{"instruction": "Rewrite professional: You clearly didn't read my instructions.", "output": "It appears the provided instructions were not fully followed. Please review and revise accordingly."}
+{"instruction": "Rewrite polite: You clearly didn't read my instructions.", "output": "I'm sorry if my instructions weren't clear enough! Would you mind giving them another quick look? I'm happy to explain anything."}
+{"instruction": "Rewrite confident: You clearly didn't read my instructions.", "output": "The output does not match the provided instructions. Revise the work to align exactly with the original requirements."}
+{"instruction": "Rewrite polite and confident: You clearly didn't read my instructions.", "output": "I appreciate the effort, but I must ask you to review the instructions again to ensure the output is fully aligned with the requirements."}
 {"instruction": "Rewrite friendly: Do not interrupt me when I am speaking.", "output": "Hey, could you let me finish my thought? Thanks!"}
+{"instruction": "Rewrite professional: Do not interrupt me when I am speaking.", "output": "Please allow me to finish my statement before responding."}
+{"instruction": "Rewrite polite: Do not interrupt me when I am speaking.", "output": "I'm so sorry, could I just finish this one thought before we move on? Thank you for understanding!"}
+{"instruction": "Rewrite confident: Do not interrupt me when I am speaking.", "output": "I am speaking. Please wait for me to finish my statement before providing your input."}
+{"instruction": "Rewrite polite and confident: Do not interrupt me when I am speaking.", "output": "I would appreciate it if you could let me finish my statement so we can have a complete discussion."}
 {"instruction": "Rewrite friendly: You messed up the presentation.", "output": "There are a few areas in the presentation we can improve. Let us refine them together."}
+{"instruction": "Rewrite professional: You messed up the presentation.", "output": "There were several significant errors in the presentation that require immediate correction."}
+{"instruction": "Rewrite polite: You messed up the presentation.", "output": "Thank you for the effort on the presentation. I noticed a few spots where we could make it even better\u2014would you mind if we went over them?"}
+{"instruction": "Rewrite confident: You messed up the presentation.", "output": "The presentation contained critical errors. I am leading a revision session at 3:00 PM to ensure it is corrected."}
+{"instruction": "Rewrite polite and confident: You messed up the presentation.", "output": "I appreciate the work on the presentation, but I am confident that we need to address these errors immediately to meet our standards."}
 {"instruction": "Rewrite friendly: This code is a disaster.", "output": "This code might benefit from a bit of cleanup and refactoring."}
+{"instruction": "Rewrite professional: This code is a disaster.", "output": "The current codebase requires substantial refactoring to meet our quality standards."}
+{"instruction": "Rewrite polite: This code is a disaster.", "output": "I think we have a great start here, but would you mind if we did a bit of cleanup to make it even more polished?"}
+{"instruction": "Rewrite confident: This code is a disaster.", "output": "The current code quality is below standard. I am mandating a full refactor to ensure long-term maintainability."}
+{"instruction": "Rewrite polite and confident: This code is a disaster.", "output": "I appreciate the progress, but I am confident that a full refactor is necessary to ensure the long-term success of this feature."}
 {"instruction": "Rewrite friendly: I expect this done by tomorrow, no excuses.", "output": "It would be great if we could have this ready by tomorrow."}
+{"instruction": "Rewrite professional: I expect this done by tomorrow, no excuses.", "output": "This task must be completed by tomorrow. Please ensure it is prioritized."}
+{"instruction": "Rewrite polite: I expect this done by tomorrow, no excuses.", "output": "I'm so sorry for the tight turnaround, but would it be possible to have this finished by tomorrow? I'd really appreciate it!"}
+{"instruction": "Rewrite confident: I expect this done by tomorrow, no excuses.", "output": "I have set the deadline for tomorrow. I expect the task to be completed without delay."}
+{"instruction": "Rewrite polite and confident: I expect this done by tomorrow, no excuses.", "output": "I would appreciate your best effort to complete this by tomorrow, as it is a critical requirement for our next steps."}
 {"instruction": "Rewrite friendly: Your performance has been terrible.", "output": "Let us connect and talk about a few areas where we can improve."}
+{"instruction": "Rewrite professional: Your performance has been terrible.", "output": "Your recent performance has not met expectations. We need to discuss a path for improvement."}
+{"instruction": "Rewrite polite: Your performance has been terrible.", "output": "I'd love to sit down and chat about how things are going and see if there's anything I can do to support you more!"}
+{"instruction": "Rewrite confident: Your performance has been terrible.", "output": "Your current performance levels are not meeting the team's standards. We will begin a performance review process today."}
+{"instruction": "Rewrite polite and confident: Your performance has been terrible.", "output": "I value your contributions, but I am confident that we need to establish a clear plan to improve your current performance levels."}
 {"instruction": "Rewrite friendly: I'm done dealing with this client.", "output": "I think it might help if someone else steps in to handle this client for now."}
+{"instruction": "Rewrite professional: I'm done dealing with this client.", "output": "I believe it would be beneficial to transition this client to another team member."}
+{"instruction": "Rewrite polite: I'm done dealing with this client.", "output": "I'm finding it a bit challenging to support this client at the moment. Would anyone be open to stepping in?"}
+{"instruction": "Rewrite confident: I'm done dealing with this client.", "output": "I have decided to reassign this client to ensure better alignment and project success."}
+{"instruction": "Rewrite polite and confident: I'm done dealing with this client.", "output": "I appreciate your patience with this client, but I am confident that transitioning them to another lead is the best course of action."}
 {"instruction": "Rewrite friendly: Why is this taking so long?", "output": "Hey, could you share an update on the timeline?"}
+{"instruction": "Rewrite professional: Why is this taking so long?", "output": "Could you please provide an updated timeline and explain the current delays?"}
+{"instruction": "Rewrite polite: Why is this taking so long?", "output": "I'm so sorry to push, but I was just wondering how things are coming along? No rush, just curious about the timeline!"}
+{"instruction": "Rewrite confident: Why is this taking so long?", "output": "The current project timeline is exceeding expectations. Provide a detailed explanation for the delay by noon."}
+{"instruction": "Rewrite polite and confident: Why is this taking so long?", "output": "I would appreciate an update on the timeline, as it is essential that we maintain our project schedule."}
 {"instruction": "Rewrite friendly: You need to learn how to communicate.", "output": "I think clearer communication could really help our teamwork."}
+{"instruction": "Rewrite professional: You need to learn how to communicate.", "output": "I believe we need to work on improving our communication protocols for better collaboration."}
+{"instruction": "Rewrite polite: You need to learn how to communicate.", "output": "I was thinking it might be really helpful for us to chat about how we can communicate even better as a team! What do you think?"}
+{"instruction": "Rewrite confident: You need to learn how to communicate.", "output": "Effective communication is a requirement for this role. I expect to see immediate improvement in your reporting."}
+{"instruction": "Rewrite polite and confident: You need to learn how to communicate.", "output": "I appreciate your hard work, but I am confident that improving our communication will significantly benefit our team's success."}
 {"instruction": "Rewrite friendly: Don't ask me for help again.", "output": "I am a bit stretched right now, so I may not be able to help further."}
+{"instruction": "Rewrite professional: Don't ask me for help again.", "output": "I am unable to provide further assistance on this matter due to other commitments."}
+{"instruction": "Rewrite polite: Don't ask me for help again.", "output": "I'm so sorry, I wish I could help more, but I'm just a bit overwhelmed with my own tasks right now!"}
+{"instruction": "Rewrite confident: Don't ask me for help again.", "output": "I have provided all the assistance I can on this topic. You are now expected to handle this independently."}
+{"instruction": "Rewrite polite and confident: Don't ask me for help again.", "output": "I appreciate the request, but I am confident that you now have the tools needed to handle this independently."}
 {"instruction": "Rewrite friendly: I refuse to work with him.", "output": "I am finding it a bit challenging to collaborate. Can we explore other options?"}
+{"instruction": "Rewrite professional: I refuse to work with him.", "output": "I have concerns regarding our professional collaboration and would like to discuss alternative arrangements."}
+{"instruction": "Rewrite polite: I refuse to work with him.", "output": "I'm finding it a little bit tough to sync up with him lately. Is there any way we could adjust our workflow?"}
+{"instruction": "Rewrite confident: I refuse to work with him.", "output": "I have determined that our current collaboration is not productive. I am requesting a team reorganization."}
+{"instruction": "Rewrite polite and confident: I refuse to work with him.", "output": "I appreciate the feedback, but I am confident that reorganizing our workflow will be the most effective solution for everyone."}
 {"instruction": "Rewrite friendly: Your report is full of lies.", "output": "I noticed a few inconsistencies in the report. Can we review them together?"}
+{"instruction": "Rewrite professional: Your report is full of lies.", "output": "The report contains several inaccuracies that need to be addressed and corrected."}
+{"instruction": "Rewrite polite: Your report is full of lies.", "output": "I think I might have noticed a few spots in the report that don't quite match up. Would you mind double-checking them with me?"}
+{"instruction": "Rewrite confident: Your report is full of lies.", "output": "The data in this report is incorrect. I expect a revised version with verified sources within the hour."}
+{"instruction": "Rewrite polite and confident: Your report is full of lies.", "output": "I appreciate the report, but I am confident that the data needs to be verified and corrected to ensure accuracy."}
 {"instruction": "Rewrite friendly: This project is a complete joke.", "output": "I have some concerns about how this project is shaping up."}
+{"instruction": "Rewrite professional: This project is a complete joke.", "output": "The current direction of the project is not meeting the intended objectives."}
+{"instruction": "Rewrite polite: This project is a complete joke.", "output": "I'm just a little bit worried about where the project is heading\u2014do you think we could sit down and chat about the vision?"}
+{"instruction": "Rewrite confident: This project is a complete joke.", "output": "The project's current trajectory is unacceptable. I am taking over the strategy to ensure we meet our targets."}
+{"instruction": "Rewrite polite and confident: This project is a complete joke.", "output": "I appreciate the effort, but I am confident that a pivot in our project strategy is necessary to achieve our goals."}
 {"instruction": "Rewrite friendly: You need to stop being so lazy.", "output": "I would really appreciate seeing more consistency in effort on these tasks."}
+{"instruction": "Rewrite professional: You need to stop being so lazy.", "output": "Consistent effort and productivity are required to meet our team goals."}
+{"instruction": "Rewrite polite: You need to stop being so lazy.", "output": "I would love to see a little more of your great work more often! Is there anything I can do to help you stay motivated?"}
+{"instruction": "Rewrite confident: You need to stop being so lazy.", "output": "Your current output is insufficient. I expect a significant increase in productivity starting immediately."}
+{"instruction": "Rewrite polite and confident: You need to stop being so lazy.", "output": "I appreciate your potential, but I am confident that a more consistent effort is required to meet our team's objectives."}
 {"instruction": "Rewrite friendly: I don't want to hear your excuses.", "output": "Let us focus on how we can move forward and solve this."}
+{"instruction": "Rewrite professional: I don't want to hear your excuses.", "output": "I would prefer to focus on solutions rather than the reasons for the delay."}
+{"instruction": "Rewrite polite: I don't want to hear your excuses.", "output": "I completely understand that things happen! Why don't we just focus on how we can fix this together now?"}
+{"instruction": "Rewrite confident: I don't want to hear your excuses.", "output": "I am not interested in justifications for the failure. I expect a solution on my desk by the end of the day."}
+{"instruction": "Rewrite polite and confident: I don't want to hear your excuses.", "output": "I appreciate the context, but I am confident that focusing our energy on the solution is the best way forward."}
 {"instruction": "Rewrite friendly: I told you so.", "output": "This seems to align with something I mentioned earlier."}
+{"instruction": "Rewrite professional: I told you so.", "output": "This outcome is consistent with the concerns I raised previously."}
+{"instruction": "Rewrite polite: I told you so.", "output": "It looks like what we discussed earlier might be happening! I'm glad we caught it."}
+{"instruction": "Rewrite confident: I told you so.", "output": "This outcome confirms my original assessment. We will follow my proposed plan from now on."}
+{"instruction": "Rewrite polite and confident: I told you so.", "output": "I appreciate the confirmation; this outcome aligns with my previous assessment and reinforces our current strategy."}
 {"instruction": "Rewrite friendly: You're not paid to think.", "output": "Let us stick to the current approach for now."}
+{"instruction": "Rewrite professional: You're not paid to think.", "output": "Please focus on executing the assigned tasks according to the current plan."}
+{"instruction": "Rewrite polite: You're not paid to think.", "output": "I'm so sorry, I think for this specific task it might be best if we just stick to the original plan for now. Thank you!"}
+{"instruction": "Rewrite confident: You're not paid to think.", "output": "I have already determined the strategy for this task. Focus your efforts entirely on execution."}
+{"instruction": "Rewrite polite and confident: You're not paid to think.", "output": "I appreciate the initiative, but I am confident that sticking to the current plan is the most efficient path forward."}
 {"instruction": "Rewrite friendly: This is not my problem.", "output": "I think this might be outside my current scope."}
+{"instruction": "Rewrite professional: This is not my problem.", "output": "This issue falls outside my area of responsibility. Please direct it to the appropriate department."}
+{"instruction": "Rewrite polite: This is not my problem.", "output": "I'm so sorry, I don't think I'm the best person to help with this one! Maybe you could try reaching out to HR?"}
+{"instruction": "Rewrite confident: This is not my problem.", "output": "This issue is outside my purview. I am delegating this to the operations team for resolution."}
+{"instruction": "Rewrite polite and confident: This is not my problem.", "output": "I appreciate you bringing this to me, but I am confident that the appropriate department can provide the best support here."}
 {"instruction": "Rewrite friendly: You are wrong.", "output": "I see this a bit differently. Happy to discuss."}
+{"instruction": "Rewrite professional: You are wrong.", "output": "I disagree with that assessment and would like to present a different perspective."}
+{"instruction": "Rewrite polite: You are wrong.", "output": "I'm so sorry, I think I might see this a little bit differently! Would you mind if we chatted about it?"}
+{"instruction": "Rewrite confident: You are wrong.", "output": "That assessment is incorrect. My data shows a different result, and we will proceed based on those facts."}
+{"instruction": "Rewrite polite and confident: You are wrong.", "output": "I appreciate your perspective, but I am confident that the data supports a different conclusion which we should follow."}
 {"instruction": "Rewrite friendly: I'm muting this chat.", "output": "I am going to mute this chat for now so I can stay focused."}
+{"instruction": "Rewrite professional: I'm muting this chat.", "output": "I will be muting this conversation to focus on urgent tasks. I will check back later."}
+{"instruction": "Rewrite polite: I'm muting this chat.", "output": "I'm so sorry, I'm going to step away from the chat for a tiny bit to focus on a deadline! See you soon!"}
+{"instruction": "Rewrite confident: I'm muting this chat.", "output": "I am muting this channel to prioritize deep work. Send urgent updates via direct message only."}
+{"instruction": "Rewrite polite and confident: I'm muting this chat.", "output": "I would appreciate it if you could send urgent updates via DM, as I am muting this chat to focus on critical tasks."}
 {"instruction": "Rewrite friendly: Do whatever you want, I don't care.", "output": "I am okay with you taking the lead on this."}
+{"instruction": "Rewrite professional: Do whatever you want, I don't care.", "output": "You have the authorization to proceed as you see fit on this matter."}
+{"instruction": "Rewrite polite: Do whatever you want, I don't care.", "output": "I'm totally happy for you to take the lead on this one! I trust your judgment completely."}
+{"instruction": "Rewrite confident: Do whatever you want, I don't care.", "output": "I am delegating full decision-making authority on this matter to you. I expect a successful outcome."}
+{"instruction": "Rewrite polite and confident: Do whatever you want, I don't care.", "output": "I appreciate your initiative and am confident in your ability to take the lead on this decision."}
 {"instruction": "Rewrite friendly: You clearly have no idea what you're doing.", "output": "It might help to go over this together or get a bit more context."}
+{"instruction": "Rewrite professional: You clearly have no idea what you're doing.", "output": "It appears there is a lack of clarity on the task requirements. Let's schedule a briefing."}
+{"instruction": "Rewrite polite: You clearly have no idea what you're doing.", "output": "I'm so sorry if I didn't provide enough training on this! Would you like to go over it together real quick?"}
+{"instruction": "Rewrite confident: You clearly have no idea what you're doing.", "output": "Your execution demonstrates a lack of proficiency in this area. I am enrolling you in a mandatory training session."}
+{"instruction": "Rewrite polite and confident: You clearly have no idea what you're doing.", "output": "I appreciate the effort, but I am confident that a focused briefing will ensure we are aligned on the task requirements."}
 {"instruction": "Rewrite friendly: This is a hard no.", "output": "I am afraid I will not be able to approve this."}
+{"instruction": "Rewrite professional: This is a hard no.", "output": "This proposal is not approved at this time."}
+{"instruction": "Rewrite polite: This is a hard no.", "output": "I'm so sorry, but I don't think I can say yes to this one right now. I hope you understand!"}
+{"instruction": "Rewrite confident: This is a hard no.", "output": "I have reviewed the proposal and I am declining it. The decision is final."}
+{"instruction": "Rewrite polite and confident: This is a hard no.", "output": "I appreciate the proposal, but I am confident that it does not align with our current objectives and cannot be approved."}
 {"instruction": "Rewrite friendly: I'm logging off early because this is useless.", "output": "I am going to log off for now since I am a bit blocked here."}
+{"instruction": "Rewrite professional: I'm logging off early because this is useless.", "output": "I am concluding my work for the day as I have reached a point where further progress is not possible."}
+{"instruction": "Rewrite polite: I'm logging off early because this is useless.", "output": "I think I'm going to head out a little bit early today and start fresh tomorrow! Have a great evening everyone!"}
+{"instruction": "Rewrite confident: I'm logging off early because this is useless.", "output": "I am concluding my session for today to refocus my efforts on higher-priority tasks tomorrow morning."}
+{"instruction": "Rewrite polite and confident: I'm logging off early because this is useless.", "output": "I am concluding my work for the day to ensure I am refreshed and focused on our high-priority tasks tomorrow."}
 {"instruction": "Rewrite friendly: Learn how to use Git properly.", "output": "Maybe we can go over some Git best practices together?"}
+{"instruction": "Rewrite professional: Learn how to use Git properly.", "output": "Please review our Git workflow documentation to ensure proper usage."}
+{"instruction": "Rewrite polite: Learn how to use Git properly.", "output": "I'm so sorry to bug you, but I was wondering if we could maybe go over some Git tips together? It might save us both some time!"}
+{"instruction": "Rewrite confident: Learn how to use Git properly.", "output": "I have noted several errors in your Git usage. Review the team's standard operating procedures immediately."}
+{"instruction": "Rewrite polite and confident: Learn how to use Git properly.", "output": "I would appreciate it if you could review our Git standards to ensure our collaboration remains efficient and error-free."}
 {"instruction": "Rewrite friendly: This is above your pay grade.", "output": "This might need input from leadership."}
+{"instruction": "Rewrite professional: This is above your pay grade.", "output": "This decision requires escalation to senior management."}
+{"instruction": "Rewrite polite: This is above your pay grade.", "output": "I'm so sorry, I think we might need to get some input from the managers on this one before we move forward!"}
+{"instruction": "Rewrite confident: This is above your pay grade.", "output": "I am escalating this decision to senior leadership as it exceeds your current authority level."}
+{"instruction": "Rewrite polite and confident: This is above your pay grade.", "output": "I appreciate your input, but I am confident that this decision requires the perspective of senior leadership."}
 {"instruction": "Rewrite friendly: I already answered this. Read the thread.", "output": "I have shared some details earlier in the thread. Feel free to take a look."}
+{"instruction": "Rewrite professional: I already answered this. Read the thread.", "output": "The answer to your question can be found in our previous correspondence within this thread."}
+{"instruction": "Rewrite polite: I already answered this. Read the thread.", "output": "I'm so sorry, I think I might have mentioned that earlier in the chat! Would you mind just scrolling up a tiny bit? Thank you!"}
+{"instruction": "Rewrite confident: I already answered this. Read the thread.", "output": "The information you are requesting is already documented in this thread. Please review it before asking again."}
+{"instruction": "Rewrite polite and confident: I already answered this. Read the thread.", "output": "I appreciate the question, but I am confident that the information you need is already documented earlier in this thread."}

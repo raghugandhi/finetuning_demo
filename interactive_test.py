@@ -35,7 +35,7 @@ except Exception as e:
 model.eval()
 
 print_header("Model Ready!")
-print("Type a 'blunt' email and the model will rewrite it friendly.")
+print("Type a 'blunt' email and choose a tone.")
 print("Type 'quit' or 'exit' to stop.")
 
 while True:
@@ -47,9 +47,31 @@ while True:
     
     if not user_input:
         continue
+    
+    tone_input = input("Choose tone (1: Friendly, 2: Professional, 3: Polite, 4: Confident, 5: Polite & Confident) [default: 1]: ").strip().lower()
+    
+    if tone_input in ["quit", "exit"]:
+        print("Goodbye!")
+        break
+        
+    if tone_input == "2":
+        prefix = "Rewrite professional:"
+        tone_label = "PROFESSIONAL"
+    elif tone_input == "3":
+        prefix = "Rewrite polite:"
+        tone_label = "POLITE"
+    elif tone_input == "4":
+        prefix = "Rewrite confident:"
+        tone_label = "CONFIDENT"
+    elif tone_input == "5":
+        prefix = "Rewrite polite and confident:"
+        tone_label = "POLITE & CONFIDENT"
+    else:
+        prefix = "Rewrite friendly:"
+        tone_label = "FRIENDLY"
 
     # Format the prompt using the Gemma Chat Template
-    prompt = f"Rewrite friendly: {user_input}"
+    prompt = f"{prefix} {user_input}"
     messages = [{"role": "user", "content": prompt}]
     
     # Pre-process
@@ -60,8 +82,8 @@ while True:
         return_tensors="pt"
     ).to(device)
 
-    # Generate - BASE MODEL (Casual)
-    print("\nGenerating Base (Casual) Response...")
+    # Generate - BASE MODEL (Generic)
+    print(f"\nGenerating Base (Generic) Response...")
     with torch.no_grad():
         with model.disable_adapter():
             out_base = model.generate(
@@ -75,8 +97,8 @@ while True:
     base_tokens = out_base[0][input_length:]
     base_text = tokenizer.decode(base_tokens, skip_special_tokens=True).strip()
 
-    # Generate - LORA MODEL (Professional)
-    print("Generating LoRA (Professional) Response...")
+    # Generate - LORA MODEL (Fine-tuned)
+    print(f"Generating Fine-tuned ({tone_label}) Response...")
     model.set_adapter("professional")
     with torch.no_grad():
         out_lora = model.generate(
@@ -90,7 +112,7 @@ while True:
     lora_text = tokenizer.decode(lora_tokens, skip_special_tokens=True).strip()
 
     print("\n" + "*" * 50)
-    print(f"[CASUAL DEMO -> BASE ONLY]:\n{base_text if base_text else '(Empty output)'}")
+    print(f"[BASE MODEL]:\n{base_text if base_text else '(Empty output)'}")
     print("-" * 50)
-    print(f"[PROFESSIONAL DEMO -> BASE + LORA]:\n{lora_text if lora_text else '(Empty output)'}")
+    print(f"[FINE-TUNED {tone_label}]:\n{lora_text if lora_text else '(Empty output)'}")
     print("*" * 50)
