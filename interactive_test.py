@@ -34,44 +34,81 @@ except Exception as e:
 
 model.eval()
 
+import re
+
+def parse_natural_input(user_input):
+    """
+    Parses input like: 'give me an email in polite and confident for the "hey cany do this work asap"?'
+    Returns: (prefix, tone_label, content)
+    """
+    input_lower = user_input.lower()
+    
+    # 1. Detect Tones
+    found_tones = []
+    if "polite" in input_lower: found_tones.append("polite")
+    if "confident" in input_lower: found_tones.append("confident")
+    if "professional" in input_lower: found_tones.append("professional")
+    if "friendly" in input_lower: found_tones.append("friendly")
+    
+    # Handle the hybrid case first
+    if "polite" in found_tones and "confident" in found_tones:
+        prefix = "Rewrite polite and confident:"
+        tone_label = "POLITE & CONFIDENT"
+    elif found_tones:
+        # Use the first tone found if not hybrid
+        primary_tone = found_tones[0]
+        prefix = f"Rewrite {primary_tone}:"
+        tone_label = primary_tone.upper()
+    else:
+        # Default
+        prefix = "Rewrite friendly:"
+        tone_label = "FRIENDLY (Default)"
+
+    # 2. Extract Content
+    # Try to find text inside quotes first
+    quotes_match = re.search(r'["\'](.*?)["\']', user_input)
+    if quotes_match:
+        content = quotes_match.group(1).strip()
+    else:
+        # If no quotes, take everything after the last colon or common keywords
+        keywords = ["for the", "for", "rewrite:", "rewrite"]
+        content = user_input
+        for kw in keywords:
+            if kw in input_lower:
+                content = user_input[input_lower.rfind(kw) + len(kw):].strip()
+                break
+        
+        # Clean up any trailing punctuation like '?'
+        content = content.rstrip('?')
+
+    return prefix, tone_label, content
+
 print_header("Model Ready!")
-print("Type a 'blunt' email and choose a tone.")
+print("Enter a command like: 'Rewrite polite and confident: [your message]'")
+print("Or: 'Give me a professional version of \"I am leaving\"'")
 print("Type 'quit' or 'exit' to stop.")
 
 while True:
-    user_input = input("\n[BLUNT EMAIL]: ").strip()
+    raw_input = input("\n[COMMAND]: ").strip()
     
-    if user_input.lower() in ["quit", "exit"]:
+    if raw_input.lower() in ["quit", "exit"]:
         print("Goodbye!")
         break
     
-    if not user_input:
+    if not raw_input:
         continue
     
-    tone_input = input("Choose tone (1: Friendly, 2: Professional, 3: Polite, 4: Confident, 5: Polite & Confident) [default: 1]: ").strip().lower()
+    prefix, tone_label, content = parse_natural_input(raw_input)
     
-    if tone_input in ["quit", "exit"]:
-        print("Goodbye!")
-        break
-        
-    if tone_input == "2":
-        prefix = "Rewrite professional:"
-        tone_label = "PROFESSIONAL"
-    elif tone_input == "3":
-        prefix = "Rewrite polite:"
-        tone_label = "POLITE"
-    elif tone_input == "4":
-        prefix = "Rewrite confident:"
-        tone_label = "CONFIDENT"
-    elif tone_input == "5":
-        prefix = "Rewrite polite and confident:"
-        tone_label = "POLITE & CONFIDENT"
-    else:
-        prefix = "Rewrite friendly:"
-        tone_label = "FRIENDLY"
+    if not content or content == raw_input:
+        print(f"⚠️ Could not clearly separate tone from content. Using full input as content.")
+        content = raw_input
+
+    print(f"✨ Detected Tone: {tone_label}")
+    print(f"📝 Extracted Content: '{content}'")
 
     # Format the prompt using the Gemma Chat Template
-    prompt = f"{prefix} {user_input}"
+    prompt = f"{prefix} {content}"
     messages = [{"role": "user", "content": prompt}]
     
     # Pre-process
